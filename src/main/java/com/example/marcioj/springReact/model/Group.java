@@ -2,6 +2,7 @@ package com.example.marcioj.springReact.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class Group {
     @Id
     @GeneratedValue
     private Long id;
+    @NonNull
     private String name;
     private String address;
     private String city;
